@@ -2,7 +2,7 @@ from selenium import webdriver
 from  time import sleep
 from bs4 import BeautifulSoup
 
-ctx = 'C:/Users/ezen/PycharmProjects/'
+ctx = '../../'
 driver = webdriver.Chrome(ctx+"chromedriver")
 driver.get('https://movie.naver.com/movie/sdb/rank/rmovie.nhn')
 soup = BeautifulSoup(driver.page_source, 'html.parser')

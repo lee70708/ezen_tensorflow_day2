@@ -4,12 +4,18 @@ from nltk.tokenize import word_tokenize
 from nltk import FreqDist
 import pandas as pd
 from wordcloud import WordCloud
-import matplotlib.pyplot as plt
+# 맥에서
+import matplotlib
+matplotlib.use("TkAgg")
+from matplotlib import pyplot as plt
+# 윈도우에서
+# import matplotlib.pyplot as plt
+# 다운로드용으로 한번만 사용하고 주석
 # import nltk
 # nltk.download()
 
 okt = Okt()
-ctx = 'C:/Users/ezen/PycharmProjects/test2/data/'
+ctx = '../data/'
 filename = ctx + 'kr-Report_2018.txt'
 
 with open(filename, 'r', encoding='UTF-8') as f:
